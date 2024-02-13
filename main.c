@@ -1,9 +1,11 @@
+// Локтионов Павел, вариант 2 / 1 / 2 / 3
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
 
-long long n=100;
+long long n=100000;
 long long number_of_comparison_1 = 0, number_of_movement_1 = 0, number_of_comparison_2 = 0, number_of_movement_2 = 0;
 double average_number_of_comparison_1 = 0, average_number_of_comparison_2 = 0, average_number_of_movement_1 = 0, average_number_of_movement_2 = 0;
 
@@ -130,4 +132,6 @@ int main(void){
     average_number_of_comparison_2/=4;
     average_number_of_movement_2/=4;
     printf("Average_number_of_comparison = %.2lf %.2lf\nAverage_number_of_movement = %.2lf %.2lf\n",average_number_of_comparison_1,average_number_of_comparison_2,average_number_of_movement_1,average_number_of_movement_2);
+    free(a_1);
+    free(a_2);
 }
